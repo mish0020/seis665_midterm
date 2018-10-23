@@ -1,0 +1,40 @@
+{
+    "TargetHealthDescriptions": [
+        {
+            "HealthCheckPort": "80", 
+            "Target": {
+                "Id": "i-05f2163c4c232912c", 
+                "Port": 80
+            }, 
+            "TargetHealth": {
+                "State": "unhealthy", 
+                "Reason": "Target.ResponseCodeMismatch", 
+                "Description": "Health checks failed with these codes: [404]"
+            }
+        }, 
+        {
+            "HealthCheckPort": "80", 
+            "Target": {
+                "Id": "i-03e5088bb42f88b0d", 
+                "Port": 80
+            }, 
+            "TargetHealth": {
+                "State": "unhealthy", 
+                "Reason": "Target.ResponseCodeMismatch", 
+                "Description": "Health checks failed with these codes: [404]"
+            }
+        }, 
+        {
+            "HealthCheckPort": "80", 
+            "Target": {
+                "Id": "i-0a4e0580504f01bcf", 
+                "Port": 80
+            }, 
+            "TargetHealth": {
+                "State": "unhealthy", 
+                "Reason": "Target.ResponseCodeMismatch", 
+                "Description": "Health checks failed with these codes: [404]"
+            }
+        }
+    ]
+}
