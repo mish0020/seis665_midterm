@@ -1,0 +1,42 @@
+{
+    "TargetGroups": [
+        {
+            "HealthCheckPath": "/index.php", 
+            "HealthCheckIntervalSeconds": 15, 
+            "VpcId": "vpc-0545d6ed5b3938941", 
+            "Protocol": "HTTP", 
+            "HealthCheckTimeoutSeconds": 5, 
+            "HealthCheckProtocol": "HTTP", 
+            "LoadBalancerArns": [
+                "arn:aws:elasticloadbalancing:us-east-2:955851341468:loadbalancer/app/dynac-DynaE-1NG155CRPR0K/e737647c7b570c6f"
+            ], 
+            "UnhealthyThresholdCount": 2, 
+            "HealthyThresholdCount": 5, 
+            "TargetGroupArn": "arn:aws:elasticloadbalancing:us-east-2:955851341468:targetgroup/Dynacorp-tgt/230b3d066b0400f5", 
+            "Matcher": {
+                "HttpCode": "200"
+            }, 
+            "HealthCheckPort": "traffic-port", 
+            "Port": 80, 
+            "TargetGroupName": "Dynacorp-tgt"
+        }, 
+        {
+            "HealthCheckPath": "/index.php", 
+            "HealthCheckIntervalSeconds": 15, 
+            "VpcId": "vpc-0545d6ed5b3938941", 
+            "Protocol": "HTTP", 
+            "HealthCheckTimeoutSeconds": 10, 
+            "HealthCheckProtocol": "HTTP", 
+            "LoadBalancerArns": [], 
+            "UnhealthyThresholdCount": 2, 
+            "HealthyThresholdCount": 2, 
+            "TargetGroupArn": "arn:aws:elasticloadbalancing:us-east-2:955851341468:targetgroup/dynac-DynaT-MZTLRUFKJVC6/d1615b4400c469b3", 
+            "Matcher": {
+                "HttpCode": "200"
+            }, 
+            "HealthCheckPort": "traffic-port", 
+            "Port": 80, 
+            "TargetGroupName": "dynac-DynaT-MZTLRUFKJVC6"
+        }
+    ]
+}
