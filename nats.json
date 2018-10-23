@@ -1,0 +1,19 @@
+{
+    "NatGateways": [
+        {
+            "NatGatewayAddresses": [
+                {
+                    "PublicIp": "3.16.7.8", 
+                    "NetworkInterfaceId": "eni-0e3546348c546c5bb", 
+                    "AllocationId": "eipalloc-0f4e417b36bd73ce3", 
+                    "PrivateIp": "10.0.0.131"
+                }
+            ], 
+            "VpcId": "vpc-0545d6ed5b3938941", 
+            "State": "available", 
+            "NatGatewayId": "nat-08c7f6e18c415a7f7", 
+            "SubnetId": "subnet-0e11370ab07b4eef9", 
+            "CreateTime": "2018-10-23T00:07:59.000Z"
+        }
+    ]
+}
